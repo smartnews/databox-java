@@ -15,8 +15,6 @@ import java.util.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.xml.bind.DatatypeConverter;
-
 public class Databox {
   static final Logger logger = LoggerFactory.getLogger(Databox.class);
   private static final String DEFAULT_HOST = "https://push.databox.com";
@@ -218,6 +216,6 @@ public class Databox {
   }
 
   private String base64Encode(byte[] input) {
-    return DatatypeConverter.printBase64Binary(input);
+    return Base64.getEncoder().encodeToString(input);
   }
 }
