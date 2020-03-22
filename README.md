@@ -33,7 +33,7 @@ Or check out the `sample/` directory for both Maven and Gradle samples. You can 
 
 ## Requirements
 
-* Java >= 1.7 or later,
+* Java >= 1.8 or later,
 * Maven >= 3.0.3 OR Gradle 2.x
 
 ## Usage
